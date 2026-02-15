@@ -1,0 +1,786 @@
+/* Typography styles */
+:root {
+    --headers: 'Hello America', cursive;
+    --subheaders: 'Assistant Medium', sans-serif;
+    --jobboard-titles: 'Archivo SemiCondensed', sans-serif;
+    --jobboard-tags: 'Archivo', sans-serif;
+    --post-labels: 'Archivo Light', sans-serif;
+    --post-traits: 'Archivo Medium', sans-serif;
+    --post-sup: 'Archivo Expanded', sans-serif;
+    --search: 'Archivo', sans-serif;
+    --highlight-text: 'Assistant SemiBold', sans-serif;
+    --labels: 'Assistant Medium', sans-serif;
+    --copy: 'Assistant', sans-serif;
+}
+h1, h3, .jobs h4 {
+    font-family: var(--headers);
+}
+h2 {
+    font-family: var(--subheaders);
+}
+h4, h5, .testimonials {
+    font-family: var(--labels);
+}
+p, ul, .jobs h4 span {
+    font-family: var(--copy);
+}
+/*.jobs h4 span {
+    font-family: var(--copy);
+}*/
+
+
+/* Job Board */
+.tags, .traits {
+    font-family: var(--jobboard-tags);
+}
+.title {
+    font-family: var(--jobboard-titles);
+}
+.traits strong {
+    font-family: var(--post-traits);
+}
+
+
+/* PAGE: GLOBAL -----------------------------*/
+/* TYPOGRPAPHY */
+/* CONTAINERS: Y */
+/* CONTAINERS: HEADER */
+#header.desktop {
+    margin: 75px auto;
+}
+/* CONTAINERS: FOOTER */
+/* COMPONENT: CTAs BUTTONS */
+.buttons {
+    width: 178px;
+    /* height: 62px; */
+    display: block;
+    text-align: center;
+    line-height: 1;
+    overflow: hidden;
+    padding: 1em 0;
+}
+.buttons {
+    font-family: var(--headers);
+    border: 1px #979797 solid;
+    border-radius: 44px;
+    background-color: #D8D8D8;
+    color: #000;
+    padding: 10px 12px;
+    overflow: hidden;
+    line-height: 1;
+    white-space: nowrap;
+    width: fit-content;
+    min-width: 9rem;
+    display: inline-block;
+    text-decoration: none;
+}
+.buttons img {
+    vertical-align: middle;
+}
+
+
+/* PAGE: HOME -----------------------------*/
+/* TYPOGRPAPHY */
+/* CONTAINERS: Y */
+/* COMPONENT: JOB BOARD */
+
+/* PAGE: CUSTOMERS -----------------------------*/
+/* CONTAINERS: Y */
+/* COMPONENT: Z */  
+
+/* PAGE: PROFILES -----------------------------*/
+/* CONTAINERS: HERO */
+#modal-content #hero {
+    grid-template-columns: 70%;
+    text-align: left;
+    margin-top: 65px;
+}
+/* COMPONENT: Z */  
+#modal-content #hero .value-prop {
+    width: 100%;
+    white-space: nowrap;
+    text-align: left;
+}
+#modal-content #hero .value-prop h2 {
+    text-align: right;
+    width: 100%;
+}
+
+
+/* PAGE: SOLUTIONS -----------------------------*/
+/* CONTAINERS: Y */
+/* COMPONENT: Z */  
+
+/* PAGE: RESUME -----------------------------*/
+/* CONTAINERS: Y */
+/* COMPONENT: Z */  
+
+/* PAGE: PRODUCTS -----------------------------*/
+    /* CONTAINERS: SLIDES */
+    .slides {
+        display: grid;
+        grid-template-areas:
+            "preview"
+            "descriptions";
+        grid-template-columns: 100% 100%;
+    }
+    .slides .previews {
+        grid-area: preview;
+    }
+    .slides .descriptions {
+        grid-area: descriptions;
+    }
+    /* COMPONENT: DESCRIPTIONS */
+    .descriptions p {
+        display: flex;
+        line-height: 1.25;
+        font-size: 18px;
+        width: 285px;
+        margin: 15px auto;
+    }
+    .descriptions p img {
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 20px;
+        height: fit-content;
+    }
+    .descriptions div em {
+        font-family: var(--headers);
+        opacity: .15;
+        display: block;
+        font-size: 25px;
+        margin-right: 10%;
+        width: 285px;
+        justify-self: flex-end;
+    }
+    .descriptions dl {
+        font-family: var(--copy);
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .descriptions dl dt {
+        font-weight: bold;
+        width: 40%;
+    }
+    .descriptions dl dt::before {
+        display: inline-block;
+        width: 40px;
+        text-align: center;
+        margin-right: 15px;
+        vertical-align: middle;
+    }
+    .descriptions dl dd {
+        width: 50%;
+        margin: 0;
+    }
+    #products dt:first-of-type::before, #products dt:last-of-type::before {
+        content: "+";
+        display: inline-block;
+        content: url("images/theme/icons/puzzlepiece.fill.png");
+    }
+    #products dt:nth-of-type(2)::before {
+        content: url("images/theme/icons/puzzlepiece.extension.png");
+    }
+    #products dt:nth-of-type(3)::before {
+        content: url("images/theme/icons/puzzlepiece.fill.png");
+        transform: rotate(90deg);
+        text-align: left;
+    }
+    #products dt:nth-of-type(4)::before {
+        content: url("images/theme/icons/puzzlepiece.png");
+    }
+    #products dt:nth-of-type(5)::before {
+        content: url("images/theme/icons/puzzlepiece.extension.fill.png");
+    }
+    #products dt:nth-of-type(6)::before {
+        content: url("images/theme/icons/puzzlepiece.png");
+        transform: rotate(90deg);
+        text-align: left;
+    }
+
+    #products main {
+        overflow: hidden;
+        max-height: 95em;
+    }
+    #products .slides {
+        margin-bottom: 10em;
+    }
+    /* COMPONENT: PREVIEWS */
+    aside.preview {
+        width: 230px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    aside.preview img {
+        display: block;
+        width: 100%;
+    }
+/* CONTAINERS: Y */
+/* COMPONENT: Z */  
+
+
+
+/* PAGE: CUSTOMERS styles ------------------------------- */
+/* ----COMPONENT: Partners */
+.icon-container .partners {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.labels {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card .open-modal, .card .title, footer .card {
+    border: 0 none transparent;
+    cursor: pointer;
+}
+.card .labels .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.labels .title sup {
+    font-size: 15px;
+}
+.labels .traits {
+    display: flex;
+    justify-content: space-between;
+}
+.labels .call-to-actions {
+    display: flex;
+    justify-content: space-between;
+}
+/* COMPONENT: Tags */
+.tags {
+    width: 95%;
+    margin: 0 auto;
+}
+.tags span {
+    border-radius: 25px;
+    border: 1px #979797 solid;
+    padding: 4px 20px;
+    background-color: #D8D8D8;
+    display: inline-block;
+    margin-bottom: 12px;
+    text-align: center;
+}
+/* COMPONENT: QUALIFICATIONS */
+#qualifications ul {
+    list-style: disc;
+    margin: 0 auto;
+    width: 75%;
+}
+
+/* PAGE: RESUME -----------------------------*/
+/* TYPOGRPAPHY */
+#experience h3 {
+    opacity: .45;
+}
+#expertise section h3 {
+    opacity: .25;
+    letter-spacing: 2px;
+}
+#expertise ul {
+    margin-top: 0px;
+}
+#expertise section div h5 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    opacity: 0.70;
+}
+.jobs h4 {
+    letter-spacing: 2px;
+}
+.jobs h4 span {
+    opacity: .65;
+}
+/* COMPONENT: TITLE BORDERS */
+.title-border:before {
+    content: ' ';
+    border-top: 2px #979797 solid;
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5%;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #979797;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.jobs {
+    position: relative;
+    padding-right: 15%;
+}
+.jobs:first-of-type::after {
+    background-color: #979797;
+}
+.jobs::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    border: 1px #979797 solid;
+    z-index: 1;
+    right: -10px;
+    top: 50%;
+}
+.dates {
+    position: absolute;
+    right: 0%;
+    transform: rotate(90deg);
+    top: 50%;
+    font-family: var(--headers);
+    font-size: 24px;
+    font-size: 12px;
+    color: #979797;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+
+/* PAGE: SOLUTIONS -----------------------------*/
+/* TYPOGRPAPHY */
+/* CONTAINERS: Headers */
+#services > div .subheaders {
+    line-height: .45;
+    text-align: center;
+    margin-bottom: 55px;
+}
+#services > div .subheaders h4 {
+    opacity: .60;
+}
+/* COMPONENT: SERVICES */
+#sprints .projects, #sessions .projects {
+    margin: 0 auto;
+    text-align: center;
+}
+#sprints .projects h5, #sessions .projects h5 {
+    opacity: .55;
+    text-decoration: underline;
+    line-height: 0;
+}
+/* COMPONENT: TESTIMONIALS */
+#testimonials.card {
+    border: 0 none transparent;
+    background-color: transparent;
+    width: fit-content;
+}
+
+
+/* PAGE: X -----------------------------*/
+/* TYPOGRPAPHY */
+/* CONTAINERS: Y */
+/* COMPONENT: Z */
+    /* COMPONENT: CTAs BUTTONS */
+
+
+
+/* Mobile styles */
+/*@media (max-width: 360px) {*/
+/* Device: MOBILE -----------------------------*/
+@media (max-width: 500px) {
+    /* TYPOGRPAPHY */
+    /* CONTAINERS: Y */
+
+    /* PAGE: GLOBAL -----------------------------*/
+    /* CONTAINERS: FOOTER */
+    body {
+        margin: 0;
+        padding-bottom: 25%;
+    }
+
+    /* PAGE: HOME -----------------------------*/
+    /* COMPONENT: JOB BOARD TAGS */
+    #home .tags {
+        display: none;
+    }
+    /* COMPONENT: QUALIFICATIONS */
+    #qualifications ul {
+        list-style: disc;
+        width: 307px;
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    /* PAGE: CUSTOMERS -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+
+    /* PAGE: PROFILES -----------------------------*/
+    /* CONTAINERS: HERO */
+    #modal-content #hero {
+        grid-template-columns: 70%;
+    }
+
+    /* PAGE: SOLUTIONS -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: TESTIMONIALS */
+    #testimonials.card {  
+        display: none;
+    }
+
+    /* PAGE: RESUME -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+    /* COMPONENT: SIDEBAR */  
+    #expertise section div h5 {
+        margin: 0;
+    }
+    #expertise ul li {
+        display: inline;
+        line-height: 1;
+    }
+    #expertise ul li::after {
+        content: ' / ';
+        color: #d8d8d8;
+    }
+
+    /* PAGE: PRODUCTS -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+
+    /* PAGE: X -----------------------------*/
+
+    /* PAGE: X -----------------------------*/
+    /* TYPOGRPAPHY */
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+}
+
+/* Device: TABLETS/DESKTOPS -----------------------------*/
+@media (min-width: 501px) {
+    /* PAGE: GLOBAL -----------------------------*/
+    /* COMPONENT: CTAs BUTTONS */
+    #home .desktop nav .buttons {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    #home nav .buttons {
+        letter-spacing: 2px;
+        font-size: 14px;
+        min-width: 6rem;
+        vertical-align: middle;
+        margin: 0 15px;
+    }
+
+    /* PAGE: HOME -----------------------------*/
+    /* TYPOGRPAPHY */
+    /* CONTAINERS: HERO */
+    #home #hero {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: flex-end;
+    }
+    #home .value-prop {
+        margin-right: 30px;
+        width: 365px;
+    }
+    #home #summary .buttons {
+        margin: 18px auto;
+        display: block;
+    }
+    #home #summary .text-link {
+        font-family: var(--highlight-text);
+        font-size: 18px;
+        color: #000;
+        font-size: 16px;
+    }
+    #home #roles {
+        justify-items: flex-end;
+        width: 50%;
+    }
+    /* COMPONENT: JOB BOARD */
+    #home li.card {
+        transform: rotate(10deg);
+        /*width: 90%;*/
+    }
+    #home .card .labels .title {
+        font-size: 24px;
+    }
+    #home .labels div {
+        display: flex;
+    }
+    #home .labels .traits {
+        margin-right: 20px;
+    }
+    #home .labels .tags {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 16px;
+        margin-left: 20px;
+        /* margin: 16px 10px 0 20px; */
+    }
+    #home .labels .tags span {
+        margin-right: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    /* COMPONENT: PROFILE */
+    #home #profile {
+        width: 506px;
+    }
+    #home #profile span {
+        width: 60%;
+        display: inline-block;
+    }
+    #home #profile p span em {
+        letter-spacing: 1px;
+        font-size: 21px;
+    }
+
+    /* PAGE: CUSTOMERS -----------------------------*/
+    /* CONTAINERS: SIDEBAR */
+    #customers aside, #employers aside {
+        margin-top: 75px;
+    }
+    /* COMPONENT: TRAITS */
+    #customers aside h5, #customers aside dl, #employers aside h5, #employers aside dl {
+        margin-left: 50px;
+    }
+    #customers aside h5, #employers aside h5 {
+        font-size: 20px;
+        opacity: .70;
+        margin-bottom: 0;
+    }
+    #customers aside h5, aside dl, #employers aside h5,  {
+        margin-left: 50px;
+    }
+    #customers aside dl, #employers aside dl {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    #customers aside dt:first-of-type, #employers aside dt:first-of-type {
+        margin-top: 0;
+    }
+    #customers aside dt, #employers aside dt {
+        font-family: var(--labels);
+        opacity: .58;
+        margin-top: 30px;
+    }
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+
+    /* PAGE: PROFILES -----------------------------*/
+    /* CONTAINERS: HERO */
+    #modal-content #hero {
+        grid-template-columns: 70%;
+    }
+
+    /* PAGE: SOLUTIONS -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: TESTIMONIALS */  
+    #testimonials q {
+        width: 416px;
+    }  
+
+    /* PAGE: RESUME -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+    /* COMPONENT: TITLE BORDERS */  
+    .title-border:before {
+        width: 50%;
+    }
+
+    /* PAGE: PRODUCTS -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+    /* COMPONENT: DESCRIPTIONS */
+    .descriptions p {
+        font-size: 24px;
+    }
+    .descriptions div em {
+        font-size: 40px;
+        display: block;
+        width: 100%;
+        align-self: flex-end;
+        opacity: .15;
+        font-family: var(--headers);
+        text-align: right;
+    }
+}
+
+/* Device: TABLETS -----------------------------*/
+@media (min-width: 501px) and (max-width: 990px) {
+    /* PAGE: GLOBAL -----------------------------*/
+    /* CONTAINERS: FOOTER */
+    body {
+        margin: 0;
+        padding-bottom: 25%;
+    }
+    /* PAGE: HOME -----------------------------*/
+    /* COMPONENT: VALUE PROP */
+    #home .value-prop {
+        width: 240px;
+    }
+    /* COMPONENT: JOB BOARD */
+    #home #roles {
+        padding-top: 50px;
+    }
+    #home li.card {
+        /*width: 90%;*/
+        width: calc(100% - 20px);
+    }
+    #home .labels .traits {
+        margin-right: 20px;
+        font-size: 13px;
+    }
+    /*#home .card .labels .title {
+        font-size: 11px;
+    }*/
+    #home .labels div {
+        display: block;
+    }
+    /*#home .labels .traits {
+        font-size: 10px;
+    }*/
+    .brain.icon {
+        width: 16px;
+    }
+    .openai.icon {
+        width: 35px;
+        height: 35px;
+    }
+    .perplexity.icon {
+        width: 18px;
+        height: 18px;
+    }
+    .claude.icon {
+        width: 14px;
+        height: 14px;
+    }
+    #home .labels .traits:last-of-type {
+        display: none;
+    }
+    #home .labels .tags {
+        display: none;
+    }
+    /*
+    #roles .card .labels {
+        margin-bottom: 0px;
+        padding: 0 !important;
+    }*/
+
+    /* PAGE: PRODUCTS -----------------------------*/
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */  
+    /* CONTAINERS: SLIDES */
+    .slides {
+        grid-template-columns: 60% 30%;
+        grid-template-areas:
+        "descriptions"
+        "preview";
+    }
+    #products main {
+        max-height: 50em;
+    }
+    /* COMPONENT: PREVIEWS */
+    aside.preview {
+        width: 325px;
+    }
+    /* COMPONENT: DESCRIPTIONS */
+    .descriptions p {
+        width: 90%;
+    }
+
+
+    /* PAGE: RESUME -----------------------------*/
+    /* COMPONENT: SIDEBAR */  
+    #expertise section div h5 {
+        margin: 0;
+    }
+    #expertise ul li {
+        display: inline;
+        line-height: 1;
+    }
+    #expertise ul li::after {
+        content: ' / ';
+        color: #d8d8d8;
+    }
+
+
+    /* PAGE: X -----------------------------*/
+    /* TYPOGRPAPHY */
+    /* CONTAINERS: Y */
+    /* COMPONENT: Z */
+
+}
+
+
+    /* PAGE: CUSTOMERS -----------------------------*/
+    /* TYPOGRPAPHY */
+
+/* Device: DESKTOPS -----------------------------*/
+@media (min-width: 991px) {
+
+    /* PAGE: HOME -----------------------------*/
+    /* TYPOGRPAPHY */
+    /* CONTAINERS: HERO */
+    #home .value-prop {
+        margin-right: 204px;
+    }
+    #home .labels .traits {
+        white-space: nowrap;
+    }
+    #home .card:first-of-type .labels div .traits {
+        font-size: 14px;
+    }
+    /*#home #roles, .card {
+       width: inherit;
+    }*/
+
+    /* PAGE: PRODUCTS -----------------------------*/
+    /* CONTAINERS: SLIDES */
+    .slides {
+        grid-template-areas: "descriptions preview";
+        grid-template-columns: 30% 70%;
+        grid-template-columns: 60% 30%;
+    }
+    /* COMPONENT: DESCRIPTIONS */
+    .descriptions p {
+        font-size: 24px;
+        width: 65%;
+        margin: 0;
+    }
+    .descriptions div em {
+        font-size: 40px;
+    }
+
+    #products main {
+        max-height: 50em;
+    }
+
+    /* COMPONENT: PREVIEWS */
+    aside.preview {
+        width: 378px;
+    }
+
+    /* PAGE: PROFILES -----------------------------*/
+    /* CONTAINERS: HERO */
+    #modal-content #hero {
+        grid-template-columns: 40%;
+    }
+}

@@ -1,0 +1,29 @@
+/employers/engineering-managers.html  /employers/engineering-managers/  301!
+/employers/product-managers.html  /employers/product-managers/  301!
+/employers/tech-founders.html  /employers/tech-founders/  301!
+/employers/engineering-head-dir.html  /employers/engineering-head-dir/  301!
+
+
+/clients/owners.html  /clients/owners/  301!
+/clients/founders.html  /clients/founders/  301!
+/clients/managers.html  /clients/managers/  301!
+/clients/project-managers.html  /clients/project-managers/  301!
+
+
+/clients.html  /clients/  301!
+/employers.html  /employers/  301!
+
+
+/products.html /products 301!
+/resume.html /resume 301!
+/solutions.html /solutions 301!
+
+
+
+
+/employers/*   /employers/?welcome=:splat
+/clients/*   /clients/?welcome=:splat
+
+/help/*  /?help=:splat
+/helps/*  /?helps=:splat
+# /*  /?hi=:splat
