@@ -1,16 +1,16 @@
 /* Typography styles */
 :root {
     --headers: 'Hello America', cursive;
-    --subheaders: 'Assistant Medium', sans-serif;
+    --subheaders: 'Assistant Bold', sans-serif;
     --jobboard-titles: 'Archivo SemiBold', sans-serif;
-    --jobboard-tags: 'Archivo', sans-serif;
-    --post-labels: 'Archivo Light', sans-serif;
+    --jobboard-tags: 'Archivo Regular', sans-serif;
+    --post-labels: 'Archivo Regular', sans-serif;
     --post-traits: 'Archivo Medium', sans-serif;
     --post-sup: 'Archivo Bold', sans-serif;
-    --search: 'Archivo', sans-serif;
+    --search: 'Archivo Regular', sans-serif;
     --highlight-text: 'Assistant SemiBold', sans-serif;
-    --labels: 'Assistant Medium', sans-serif;
-    --copy: 'Assistant', sans-serif;
+    --labels: 'Assistant Bold', sans-serif;
+    --copy: 'Assistant Regular', sans-serif;
 }
 h1, h3, .jobs h4 {
     font-family: var(--headers);
