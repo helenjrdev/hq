@@ -14,6 +14,114 @@ html {
     font-family: 'Hello America';
     src: url('fonts/Hello-America.woff');
 }
+@font-face {
+    font-family: 'Assistant Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Assistant Regular'), url('fonts/Assistant-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Assistant ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Assistant ExtraLight'), url('fonts/Assistant-ExtraLight.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Assistant Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Assistant Light'), url('fonts/Assistant-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Assistant SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Assistant SemiBold'), url('fonts/Assistant-SemiBold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Assistant Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Assistant Bold'), url('fonts/Assistant-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Assistant ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Assistant ExtraBold'), url('fonts/Assistant-ExtraBold.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Archivo Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo Regular'), url('fonts/Archivo-Regular.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Archivo Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo Italic'), url('fonts/Archivo-Italic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Archivo Medium';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo Medium'), url('fonts/Archivo-Medium.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Archivo Medium Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo Medium Italic'), url('fonts/Archivo-MediumItalic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Archivo SemiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo SemiBold'), url('fonts/Archivo-SemiBold.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Archivo SemiBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo SemiBold Italic'), url('fonts/Archivo-SemiBoldItalic.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Archivo Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo Bold'), url('fonts/Archivo-Bold.woff') format('woff');
+        }
+        
+    
+        @font-face {
+        font-family: 'Archivo Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Archivo Bold Italic'), url('fonts/Archivo-BoldItalic.woff') format('woff');
+        }
 .social {
     color: #000;
     background-color: white;
@@ -34,14 +142,14 @@ html {
 }
 
 h1 {
-    font-family: 'Hello America', cursive;
+    font-family: var(--headers), cursive;
     font-size: 25px;
     padding: 0;
     margin: 0;
     line-height: 1;
 }
 h2 {
-    font-family: 'Assistant Medium', sans-serif;
+    font-family: var(--subheaders), sans-serif;
     font-weight: 700;
     padding: 0;
     margin: 0;
@@ -55,7 +163,7 @@ h2 {
     text-align: right;
 }
 p {
-    font-family: 'Assistant';
+    font-family: var(--copy);
 }
 ul {
     list-style: none;
@@ -166,7 +274,7 @@ footer {
 }
 footer nav { 
     width: 100%;
-    font-family: 'Assistant SemiBold', sans-serif;
+    font-family: var(--highlight-text), sans-serif;
     color: #000;
 }
 footer nav {
@@ -290,7 +398,7 @@ nav a .post a {
     background-color: #F3F3F3;
     margin-bottom: 20px;
     padding: 12px;
-    font-family: 'Archivo';
+    font-family: var(--post-labels);
     display: flex;
 }
 .card a:link, .card a:active, .card a:hover, .card a:visited {
@@ -320,7 +428,7 @@ nav a .post a {
 .title {
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Archivo SemiCondensed';
+    font-family: var(--jobboard-titles);
 }
 .traits {
     font-size: 16px;
@@ -336,7 +444,7 @@ nav a .post a {
 
 .title sup {
     font-size: 10px;
-    font-family: 'Archivo Bold';
+    font-family: var(--post-sup)';
 }
 .title img, .traits img {
     /*margin-right: 12px;*/
@@ -587,13 +695,13 @@ picture span {
     display: inline-block;
 }
 #profile span em:first-of-type {
-    font-family: 'Hello America', cursive;
+    font-family: var(--headers), cursive;
 }
 #profile em {
-    font-family: 'Assistant SemiBold';
+    font-family: var(--highlight-text);
 }
 #profile p a {
-    font-family: 'Assistant SemiBold';
+    font-family: var(--highlight-text);
     color: #000;
 }
 
