@@ -2,11 +2,11 @@
 :root {
     --headers: 'Hello America', cursive;
     --subheaders: 'Assistant Medium', sans-serif;
-    --jobboard-titles: 'Archivo SemiCondensed', sans-serif;
+    --jobboard-titles: 'Archivo SemiBold', sans-serif;
     --jobboard-tags: 'Archivo', sans-serif;
     --post-labels: 'Archivo Light', sans-serif;
     --post-traits: 'Archivo Medium', sans-serif;
-    --post-sup: 'Archivo Expanded', sans-serif;
+    --post-sup: 'Archivo Bold', sans-serif;
     --search: 'Archivo', sans-serif;
     --highlight-text: 'Assistant SemiBold', sans-serif;
     --labels: 'Assistant Medium', sans-serif;
